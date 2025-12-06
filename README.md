@@ -84,13 +84,13 @@ To establish a defensible, scalable framework for forensic monitoring that:
 
 ## ⚖️ Legal Notice
 
-Veridion™ is a proprietary innovation by **Jessi Marosi, Founder & CEO of ByteLock™**.  
+Veridion™ is a proprietary innovation by **Jessica Marosi, Founder & CEO of ByteLock™**.  
 Unauthorized use, reproduction, or distribution is prohibited.  
 
 - **Trademark Pending:** Veridion™  
-- **Copyright © 2025 Jessi Marosi. All rights reserved.**
+- **Copyright © 2025 Jessica Marosi. All rights reserved.**
 
-All documentation and code are authored by Jessi Marosi and protected under applicable copyright and trademark laws.  
+All documentation and code are authored by Jessica Marosi and protected under applicable copyright and trademark laws.  
 
 ---
 
