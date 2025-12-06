@@ -92,7 +92,7 @@ Veridion™ is actively expanding its capabilities with the following low-cost, 
 
 | Capability                  | Recorded Future         | Flashpoint              | Palantir Gotham           | AuditBoard               | **Veridion™**                                 |
 |----------------------------|--------------------------|--------------------------|----------------------------|--------------------------|-----------------------------------------------|
-| **Contraband Storage**     | ✅ Stores raw content     | ✅ Stores raw content     | ✅ Stores classified data   | ❌ Corporate only         | ❌ Contraband-free, synthetic descriptors      |
+| **Contraband Storage**     | ✅ Stores raw content     | ✅ Stores raw content     | ✅ Stores classified data   | ❌ Corporate only         | ✅ Contraband-free, synthetic descriptors      |
 | **Jurisdictional Routing** | Limited                  | Limited                  | Complex                    | ❌                        | ✅ Nationwide auto-routing                     |
 | **Compliance Gate**        | Limited                  | Limited                  | Partial                    | ❌                        | ✅ Real-time lawful metadata capture           |
 | **Visualization**          | Threat dashboards        | Analyst enrichment       | Deep link analysis         | Audit dashboards         | ✅ Lightweight, user-friendly heatmaps & clusters |
