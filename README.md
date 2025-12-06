@@ -22,6 +22,20 @@ It provides a defensible, scalable framework that:
 
 ## 📂 Core Features
 
+- **Alert Scope:**  
+  Veridion™ is engineered to detect and triage activity across a wide spectrum of crimes and illegal markets, including:
+
+  - **Narcotics:** fentanyl, methamphetamine, cocaine, heroin, synthetic opioids, prescription diversion  
+  - **Firearms & Weapons:** ghost guns, 3D‑printed firearms, explosives, military‑grade weapons trafficking  
+  - **Cybercrime:** ransomware chatter, malware kits, credential dumps, phishing kits, botnet services  
+  - **Fraud & Financial Crime:** credit card fraud, identity theft, counterfeit currency, money laundering schemes  
+  - **Human Trafficking & Exploitation:** recruitment chatter, illicit service advertisements, trafficking networks  
+  - **Counterfeit Goods & Supply Chain Threats:** fake pharmaceuticals, counterfeit electronics, compromised logistics  
+  - **Extremism & Terrorism:** propaganda distribution, recruitment forums, illicit funding channels  
+  - **Data Breaches & Insider Threats:** stolen databases, insider leak marketplaces, corporate espionage chatter  
+
+  All alerts are metadata‑only—no contraband or PII is ever stored. Synthetic descriptors summarize activity in lawful, forensic‑grade terms.
+
 - **Dual Queues:**  
   - *Low-level alerts* → Dashboard only  
   - *High-level alerts* → Dashboard + real-time email notification  
