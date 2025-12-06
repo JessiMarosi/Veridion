@@ -22,9 +22,12 @@ It provides a defensible, scalable framework that:
 
 ## 📂 Core Features
 
-- **Alert Scope:**  
-  Veridion™ is engineered to detect and triage activity across a wide spectrum of crimes and illegal markets, including:
+- **Dual Queues:**  
+  - *Low-level alerts* → Dashboard only  
+  - *High-level alerts* → Dashboard + real-time email notification  
 
+- **Alert Scope:**  
+  Veridion™ detects and triages activity across a wide spectrum of crimes and illegal markets:  
   - **Narcotics:** fentanyl, methamphetamine, cocaine, heroin, synthetic opioids, prescription diversion  
   - **Firearms & Weapons:** ghost guns, 3D‑printed firearms, explosives, military‑grade weapons trafficking  
   - **Cybercrime:** ransomware chatter, malware kits, credential dumps, phishing kits, botnet services  
@@ -34,46 +37,20 @@ It provides a defensible, scalable framework that:
   - **Extremism & Terrorism:** propaganda distribution, recruitment forums, illicit funding channels  
   - **Data Breaches & Insider Threats:** stolen databases, insider leak marketplaces, corporate espionage chatter  
 
-  All alerts are metadata‑only—no contraband or PII is ever stored. Synthetic descriptors summarize activity in lawful, forensic‑grade terms.
+  All alerts are metadata‑only—no contraband or PII is ever stored. Synthetic descriptors summarize activity in lawful, forensic‑grade terms.  
 
-- **Dual Queues:**  
-  - *Low-level alerts* → Dashboard only  
-  - *High-level alerts* → Dashboard + real-time email notification  
-
-- **Alert Scope:**  
-  - Detects illicit sales (e.g., fentanyl, ghost guns)  
-  - Flags cybercrime (e.g., ransomware chatter, credential dumps)  
-  - Monitors threat patterns, language, and jurisdictional indicators  
-  - All alerts are metadata-only—no contraband or PII stored  
-
-- **AI/NLP Engine:**  
-  - Open-source models for language detection, entity extraction, and predictive routing  
-
-- **Compliance Gate:**  
-  - Filters by IP, language, geolocation, and content type  
-  - Ensures real-time lawful metadata capture  
-
-- **Synthetic Descriptors:**  
-  - Replaces raw content with forensic-grade summaries  
-  - Designed for court admissibility  
-
-- **Immutable Ledger:**  
-  - Append-only, cryptographically signed logs  
-  - Integrated affidavit generator for legal proceedings  
-
-- **Hardened Access:**  
-  - Dual-admin onboarding  
-  - MFA, badge/ID verification, full traceability  
-
-- **Pending Agency Workflow:**  
-  - Alerts held if agency isn’t onboarded  
-  - Escalated to federal oversight until onboarding is complete  
+- **AI/NLP Engine:** Open-source models for language detection, entity extraction, and predictive routing  
+- **Compliance Gate:** Filters by IP, language, geolocation, and content type for lawful metadata capture  
+- **Synthetic Descriptors:** Replace raw content with forensic-grade summaries designed for court admissibility  
+- **Immutable Ledger:** Append-only, cryptographically signed logs with affidavit generator  
+- **Hardened Access:** Dual-admin onboarding, MFA, badge/ID verification, full traceability  
+- **Pending Agency Workflow:** Alerts held if agency isn’t onboarded; escalated to federal oversight until complete  
 
 ---
 
 ## 🧪 Phase 2 Enhancements
 
-Veridion™ is actively expanding its capabilities with the following low-cost, high-impact features designed for Phase 2 deployment:
+Veridion™ is expanding with the following low-cost, high-impact features:
 
 - Semantic search (AI-powered) for alerts  
 - Real-time metadata preview with urgency flags  
@@ -91,22 +68,23 @@ Veridion™ is actively expanding its capabilities with the following low-cost, 
 ## 🧭 Veridion™ vs. Competitors
 
 | Capability                  | Recorded Future         | Flashpoint              | Palantir Gotham           | AuditBoard               | **Veridion™**                                 |
-|----------------------------|--------------------------|--------------------------|----------------------------|--------------------------|-----------------------------------------------|
-| **Contraband Storage**     | ✅ Stores raw content     | ✅ Stores raw content     | ✅ Stores classified data   | ❌ Corporate only         | ✅ Contraband-free, synthetic descriptors      |
-| **Jurisdictional Routing** | Limited                  | Limited                  | Complex                    | ❌                        | ✅ Nationwide auto-routing                     |
-| **Compliance Gate**        | Limited                  | Limited                  | Partial                    | ❌                        | ✅ Real-time lawful metadata capture           |
-| **Visualization**          | Threat dashboards        | Analyst enrichment       | Deep link analysis         | Audit dashboards         | ✅ Lightweight, user-friendly heatmaps & clusters |
-| **Evidence Admissibility** | ❌                        | ❌                        | Partial                    | ❌                        | ✅ Court-ready, affidavit generator            |
-| **Cost & Complexity**      | High                     | Medium                   | Very high                  | Medium                   | ✅ Lean, scalable, affordable                  |
+|-----------------------------|-------------------------|-------------------------|---------------------------|--------------------------|-----------------------------------------------|
+| **Contraband Storage**      | ✅ Stores raw content    | ✅ Stores raw content    | ✅ Stores classified data  | ❌ Corporate only         | ✅ Contraband-free, synthetic descriptors      |
+| **Jurisdictional Routing**  | Limited                 | Limited                 | Complex                   | ❌                        | ✅ Nationwide auto-routing                     |
+| **Compliance Gate**         | Limited                 | Limited                 | Partial                   | ❌                        | ✅ Real-time lawful metadata capture           |
+| **Visualization**           | Threat dashboards       | Analyst enrichment      | Deep link analysis        | Audit dashboards         | ✅ Lightweight, user-friendly heatmaps & clusters |
+| **Evidence Admissibility**  | ❌                       | ❌                       | Partial                   | ❌                        | ✅ Court-ready, affidavit generator            |
+| **Cost & Complexity**       | High                    | Medium                  | Very high                 | Medium                   | ✅ Lean, scalable, affordable                  |
 
 ---
 
-## 🚀 Strategic Narrative
+## 🚀 Strategic Positioning & Narrative
 
-- **Purpose-built:** Unlike competitors chasing volume or corporate use, Veridion™ enforces lawful admissibility and prioritizes actionable insights.  
-- **Lean & Accessible:** Light, intuitive dashboards investigators actually use.  
-- **Court-Ready:** Immutable chain-of-custody and synthetic descriptors for defensible evidence.  
-- **Nationwide Utility:** Routes alerts automatically to the correct agency—federal, state, or local.  
+Veridion™ is purpose-built for law enforcement:
+- Contraband-free, privacy-first, and compliance-ready  
+- Court-admissible with immutable chain-of-custody  
+- Nationwide routing with lightweight, user-friendly dashboards  
+- Lean, scalable, and cost-effective compared to competitors  
 
 > “Veridion™ is the only forensic cockpit engineered for lawful admissibility, nationwide routing, and audit-grade compliance—turning competitor weaknesses into deliberate strengths.”
 
@@ -124,10 +102,10 @@ Veridion™ is actively expanding its capabilities with the following low-cost, 
 
 ## ⚖️ Compliance Safeguards
 
-- No contraband stored or transmitted  
-- Immutable ledger for every action  
-- Jurisdictional routing ensures lawful escalation  
-- Audit-grade transparency with affidavit generator  
+- Contraband-free: only lawful metadata stored  
+- Immutable ledger: every action cryptographically signed  
+- Jurisdictional routing: alerts escalated lawfully  
+- Audit-ready: affidavit generator ensures transparency  
 
 ---
 
@@ -137,7 +115,7 @@ Veridion™ is actively expanding its capabilities with the following low-cost, 
 - Timestamped commits for traceability and legal review  
 
 **Trademark Pending:** Veridion™  
-**Copyright © 2025 Jessica Marosi, ByteLock Technologies Incorporated™**  
+**Copyright © 2025 Jessica Marosi, ByteLock Technologies Incorporated**  
 Unauthorized use or distribution prohibited.  
 
 ---
@@ -150,16 +128,3 @@ Unauthorized use or distribution prohibited.
 - Scalable, cost-effective, law enforcement-focused  
 
 **Veridion™: Your early-warning system for digital crime—smart, private, and trustworthy.**
-
----
-
-## 🚀 Strategic Positioning
-
-Unlike competitors (Recorded Future, Flashpoint, Palantir, AuditBoard), Veridion™ is:  
-- Contraband-free  
-- Compliance-first  
-- Court-ready  
-- Nationwide in scope  
-- User-friendly by design  
-
-Veridion™ is the only forensic cockpit engineered for **lawful admissibility, recruiter-ready impact, and nationwide adoption**.
