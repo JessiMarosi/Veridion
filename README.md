@@ -22,29 +22,40 @@ It provides a defensible, scalable framework that:
 
 ## 📂 Core Features
 
-- **Dual Queues:**  
+- **Dual Queues**  
   - *Low-level alerts* → Dashboard only  
   - *High-level alerts* → Dashboard + real-time email notification  
 
-- **Alert Scope:**  
-  Veridion™ detects and triages activity across a wide spectrum of crimes and illegal markets:  
-  - **Narcotics:** fentanyl, methamphetamine, cocaine, heroin, synthetic opioids, prescription diversion  
-  - **Firearms & Weapons:** ghost guns, 3D‑printed firearms, explosives, military‑grade weapons trafficking  
-  - **Cybercrime:** ransomware chatter, malware kits, credential dumps, phishing kits, botnet services  
-  - **Fraud & Financial Crime:** credit card fraud, identity theft, counterfeit currency, money laundering schemes  
-  - **Human Trafficking & Exploitation:** recruitment chatter, illicit service advertisements, trafficking networks  
-  - **Counterfeit Goods & Supply Chain Threats:** fake pharmaceuticals, counterfeit electronics, compromised logistics  
-  - **Extremism & Terrorism:** propaganda distribution, recruitment forums, illicit funding channels  
-  - **Data Breaches & Insider Threats:** stolen databases, insider leak marketplaces, corporate espionage chatter  
+- **Alert Scope**  
+  Veridion™ detects and triages activity across a wide spectrum of crimes and illegal markets:
+  - **Narcotics**: fentanyl, methamphetamine, cocaine, heroin, synthetic opioids, prescription diversion  
+  - **Firearms & Weapons**: ghost guns, 3D-printed firearms, explosives, military-grade weapons trafficking  
+  - **Cybercrime**: ransomware chatter, malware kits, credential dumps, phishing kits, botnet services  
+  - **Fraud & Financial Crime**: credit card fraud, identity theft, counterfeit currency, money laundering schemes  
+  - **Human Trafficking & Exploitation**: recruitment chatter, illicit service advertisements, trafficking networks  
+  - **Counterfeit Goods & Supply Chain Threats**: fake pharmaceuticals, counterfeit electronics, compromised logistics  
+  - **Extremism & Terrorism**: propaganda distribution, recruitment forums, illicit funding channels  
+  - **Data Breaches & Insider Threats**: stolen databases, insider leak marketplaces, corporate espionage chatter  
 
-  All alerts are metadata‑only—no contraband or PII is ever stored. Synthetic descriptors summarize activity in lawful, forensic‑grade terms.  
+  All alerts are metadata-only—no contraband or PII is ever stored. Synthetic descriptors summarize activity in lawful, forensic-grade terms.
 
-- **AI/NLP Engine:** Open-source models for language detection, entity extraction, and predictive routing  
-- **Compliance Gate:** Filters by IP, language, geolocation, and content type for lawful metadata capture  
-- **Synthetic Descriptors:** Replace raw content with forensic-grade summaries designed for court admissibility  
-- **Immutable Ledger:** Append-only, cryptographically signed logs with affidavit generator  
-- **Hardened Access:** Dual-admin onboarding, MFA, badge/ID verification, full traceability  
-- **Pending Agency Workflow:** Alerts held if agency isn’t onboarded; escalated to federal oversight until complete  
+- **AI/NLP Engine**  
+  Open-source models for language detection, entity extraction, and predictive routing  
+
+- **Compliance Gate**  
+  Filters by IP, language, geolocation, and content type for lawful metadata capture  
+
+- **Synthetic Descriptors**  
+  Replace raw content with forensic-grade summaries designed for court admissibility  
+
+- **Immutable Ledger**  
+  Append-only, cryptographically signed logs with affidavit generator  
+
+- **Hardened Access**  
+  Dual-admin onboarding, MFA, badge/ID verification, full traceability  
+
+- **Pending Agency Workflow**  
+  Alerts held if agency isn’t onboarded; escalated to federal oversight until complete  
 
 ---
 
@@ -68,13 +79,13 @@ Veridion™ is expanding with the following low-cost, high-impact features:
 ## 🧭 Veridion™ vs. Competitors
 
 | Capability                  | Recorded Future         | Flashpoint              | Palantir Gotham           | AuditBoard               | **Veridion™**                                 |
-|-----------------------------|-------------------------|-------------------------|---------------------------|--------------------------|-----------------------------------------------|
-| **Contraband Storage**      | ✅ Stores raw content    | ✅ Stores raw content    | ✅ Stores classified data  | ❌ Corporate only         | ✅ Contraband-free, synthetic descriptors      |
-| **Jurisdictional Routing**  | Limited                 | Limited                 | Complex                   | ❌                        | ✅ Nationwide auto-routing                     |
-| **Compliance Gate**         | Limited                 | Limited                 | Partial                   | ❌                        | ✅ Real-time lawful metadata capture           |
-| **Visualization**           | Threat dashboards       | Analyst enrichment      | Deep link analysis        | Audit dashboards         | ✅ Lightweight, user-friendly heatmaps & clusters |
-| **Evidence Admissibility**  | ❌                       | ❌                       | Partial                   | ❌                        | ✅ Court-ready, affidavit generator            |
-| **Cost & Complexity**       | High                    | Medium                  | Very high                 | Medium                   | ✅ Lean, scalable, affordable                  |
+|----------------------------|--------------------------|--------------------------|----------------------------|--------------------------|-----------------------------------------------|
+| **Contraband Storage**     | ✅ Stores raw content     | ✅ Stores raw content     | ✅ Stores classified data   | ❌ Corporate only         | ❌ Contraband-free, synthetic descriptors      |
+| **Jurisdictional Routing** | Limited                  | Limited                  | Complex                    | ❌                        | ✅ Nationwide auto-routing                     |
+| **Compliance Gate**        | Limited                  | Limited                  | Partial                    | ❌                        | ✅ Real-time lawful metadata capture           |
+| **Visualization**          | Threat dashboards        | Analyst enrichment       | Deep link analysis         | Audit dashboards         | ✅ Lightweight, user-friendly heatmaps & clusters |
+| **Evidence Admissibility** | ❌                        | ❌                        | Partial                    | ❌                        | ✅ Court-ready, affidavit generator            |
+| **Cost & Complexity**      | High                     | Medium                   | Very high                  | Medium                   | ✅ Lean, scalable, affordable                  |
 
 ---
 
@@ -92,11 +103,11 @@ Veridion™ is purpose-built for law enforcement:
 
 ## 📊 Dashboard Design
 
-- **Dual Queues:** Clear separation of Low vs. High alerts  
-- **Clickable CaseIDs:** Secure entry point for details (dashboard only)  
-- **Lightweight Visualization:** Heatmaps, trend lines, case clustering  
-- **Domain Filters:** Narcotics, firearms, fraud, cybercrime, supply chain  
-- **Compliance Export:** Generate CJIS + GDPR/CCPA + SOC-style audit reports  
+- Dual Queues: Clear separation of Low vs. High alerts  
+- Clickable CaseIDs: Secure entry point for details (dashboard only)  
+- Lightweight Visualization: Heatmaps, trend lines, case clustering  
+- Domain Filters: Narcotics, firearms, fraud, cybercrime, supply chain  
+- Compliance Export: Generate CJIS + GDPR/CCPA + SOC-style audit reports  
 
 ---
 
