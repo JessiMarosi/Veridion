@@ -137,7 +137,7 @@ Veridion™ is actively expanding its capabilities with the following low-cost, 
 - Timestamped commits for traceability and legal review  
 
 **Trademark Pending:** Veridion™  
-**Copyright © 2025 Jessica Marosi, ByteLock™**  
+**Copyright © 2025 Jessica Marosi, ByteLock Technologies Incorporated™**  
 Unauthorized use or distribution prohibited.  
 
 ---
