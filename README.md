@@ -1,11 +1,11 @@
 # 🚨 Coming Soon: Veridion™  
 
-# Veridion
-Veridion™ — Nationwide, compliance‑first forensic monitoring system with dual alert queues, lawful metadata routing, and audit‑grade chain‑of‑custody. Trademark pending.
+## Veridion™  
+**Nationwide | Compliance‑First | Forensic‑Grade Monitoring**  
 
-**Nationwide | Compliance‑First | Forensic‑Grade Monitoring**
+Veridion™ — Nationwide, compliance‑first forensic monitoring system with dual alert queues, lawful metadata routing, and audit‑grade chain‑of‑custody. Trademark pending.  
 
-Veridion™ is a federal‑grade forensic triage cockpit engineered to flag, route, and adjudicate dark web and cybercrime activity without ever storing contraband. Built for nationwide law enforcement collaboration, Veridion™ ensures that every alert, review, and export is 100% lawful, auditable, and court‑ready.
+Veridion™ is a federal‑grade forensic triage cockpit engineered to flag, route, and adjudicate dark web and cybercrime activity without ever storing contraband. Built for nationwide law enforcement collaboration, Veridion™ ensures that every alert, review, and export is 100% lawful, auditable, and court‑ready.  
 
 ---
 
@@ -38,6 +38,8 @@ Veridion™ is a federal‑grade forensic triage cockpit engineered to flag, rou
 
 - **Recruiter‑Ready Pitch:**  
   *“Veridion™ is the only forensic cockpit engineered for lawful admissibility, nationwide routing, and audit‑grade compliance—turning competitor weaknesses into deliberate strengths.”*
+
+---
 
 ## 🔐 Purpose
 
