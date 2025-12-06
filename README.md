@@ -9,6 +9,36 @@ Veridion™ is a federal‑grade forensic triage cockpit engineered to flag, rou
 
 ---
 
+## 🧭 Veridion™ vs. Competitors
+
+| Capability | Recorded Future | Flashpoint | Palantir Gotham | AuditBoard | **Veridion™** |
+|------------|----------------|------------|-----------------|------------|---------------|
+| **Lawful Evidence Handling** | Stores raw contraband | Stores raw contraband | Stores raw classified data | Corporate compliance only | ✅ Contraband‑free, synthetic descriptors |
+| **Jurisdictional Routing** | Corporate focus | Corporate focus | Multi‑jurisdiction, but complex | Corporate only | ✅ Nationwide routing to correct agency |
+| **Compliance Gate** | Limited | Limited | Partial | Corporate GRC only | ✅ Real‑time lawful metadata capture |
+| **Visualization Tools** | Threat dashboards | Analyst enrichment | Deep link analysis, geospatial | Audit dashboards | ✅ Lightweight, user‑friendly heatmaps & clusters |
+| **Corporate Compliance Coverage** | SOC 2, ISO | Some overlap | Partial | ✅ SOC 2, SOX, ISO, GDPR | ✅ CJIS + GDPR/CCPA + SOC‑style audit exports |
+| **Use Case Breadth** | Fraud, supply chain, corporate risk | Fraud, supply chain | Broad (military, corporate, geopolitical) | Corporate GRC | ✅ Law enforcement triage + fraud, cybercrime, supply chain |
+| **Chain‑of‑Custody Integrity** | Weak | Weak | Partial | Corporate audit only | ✅ Immutable ledger + affidavit generator |
+
+---
+
+## 🚀 Strategic Narrative
+
+- **Veridion™ does things better by design:**  
+  - Where competitors chase **volume** (Recorded Future, Flashpoint), Veridion enforces **lawful admissibility**.  
+  - Where Palantir offers **complex visualization**, Veridion delivers **lightweight, user‑friendly dashboards** investigators can actually use.  
+  - Where AuditBoard covers **corporate GRC**, Veridion overlaps with those frameworks but remains **law enforcement‑centric**.  
+
+- **Competitor Weaknesses:**  
+  - **Contraband storage** (Recorded Future, Flashpoint, Palantir) → Veridion avoids this entirely.  
+  - **Corporate bias** (AuditBoard, Recorded Future) → Veridion is purpose‑built for agencies.  
+  - **Complexity & cost** (Palantir) → Veridion is lean, simple, and affordable.  
+  - **Limited forensic admissibility** (all competitors) → Veridion guarantees **court‑ready chain‑of‑custody**.  
+
+- **Recruiter‑Ready Pitch:**  
+  *“Veridion™ is the only forensic cockpit engineered for lawful admissibility, nationwide routing, and audit‑grade compliance—turning competitor weaknesses into deliberate strengths.”*
+
 ## 🔐 Purpose
 
 To establish a defensible, scalable framework for forensic monitoring that:  
