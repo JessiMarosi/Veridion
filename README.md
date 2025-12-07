@@ -142,18 +142,26 @@ Unauthorized use or distribution prohibited.
 
 ---
 
-# Veridion™ Build Plan (with Research Citations)
+# Veridion™ Build Plan (Dependencies & Additional Considerations)
 
 ---
 
-## Phase 0: Governance, scope, and guardrails (Current Phase)
+## Phase 0: Governance, scope, and guardrails
 
 - **Purpose:** Establish legal, privacy, and evidentiary boundaries before code.  
 - **Deliverables:** Threat taxonomy, lawful metadata capture policy, compliance matrix, evidence standards, retention rules.  
-- **Controls:** Kill switch for ingestion, dual‑admin approvals for policy changes.
+- **Controls:** Kill switch for ingestion, dual‑admin approvals for policy changes.  
+- **Dependencies:**  
+  - Legal/compliance counsel ([FBI CJIS Division](https://www.fbi.gov/services/cjis/cjis-security-policy))  
+  - Privacy frameworks ([European Commission GDPR Overview](https://commission.europa.eu/law/law-topic/data-protection_en))  
+  - Threat taxonomy datasets ([NIJ Digital Evidence Guidance](https://nij.ojp.gov/library/publications/digital-evidence-guidance))  
+  - Secure credential store (e.g., [HashiCorp Vault](https://www.vaultproject.io/))
 
-### Research  
-The **CJIS Security Policy** requires lifecycle protection of criminal justice information, including encryption, access control, and audit logging ([FBI CJIS Division](https://www.fbi.gov/services/cjis/cjis-security-policy)). Guidance for CJIS‑compliant digital evidence systems emphasizes encryption at rest/in transit, MFA, least‑privilege, and compliant cloud vendors ([NIJ Digital Evidence Guidance](https://nij.ojp.gov/library/publications/digital-evidence-guidance)). Privacy‑compliant redaction practices across FOIA, GDPR, and CCPA reinforce policies that avoid storing PII and contraband ([European Commission GDPR Overview](https://commission.europa.eu/law/law-topic/data-protection_en)).
+### Additional Considerations
+- Threat modeling for adversary tactics (dark‑web sellers, fraud rings, extremist groups).  
+- Policy versioning with timestamped commits for traceability.  
+- Scheduled legal review cadence.  
+- Early stakeholder buy‑in with agencies.
 
 ---
 
@@ -161,10 +169,19 @@ The **CJIS Security Policy** requires lifecycle protection of criminal justice i
 
 - **Goal:** Stand up lawful, metadata‑only intake with defensible gates.  
 - **Components:** Intake workers, compliance gate v1, synthetic descriptors, immutable ledger v1.  
-- **Deliverables:** Dual alert queues, source registry, audit fields.
+- **Deliverables:** Dual alert queues, source registry, audit fields.  
+- **Dependencies:**  
+  - Message broker ([Apache Kafka](https://kafka.apache.org/) or [RabbitMQ](https://www.rabbitmq.com/))  
+  - Cryptographic signing library ([libsodium](https://doc.libsodium.org/))  
+  - Language detection ([spaCy](https://spacy.io/), [fastText](https://fasttext.cc/))  
+  - Geolocation/IP lookup ([MaxMind GeoIP](https://www.maxmind.com/en/geoip2-services))  
+  - Immutable ledger framework ([NIJ Blockchain in Forensics Report](https://nij.ojp.gov/library/publications/blockchain-forensics))
 
-### Research  
-Metadata‑only workflows are effective in digital investigations; automated extraction and correlation improve evidentiary coherence while preserving integrity ([NIST Digital Evidence Framework](https://csrc.nist.gov/publications/detail/sp/800-86/final)). Immutable chain‑of‑custody using blockchain or append‑only ledgers enhances authenticity and evidentiary integrity ([NIJ Blockchain in Forensics Report](https://nij.ojp.gov/library/publications/blockchain-forensics)). Your public [STIG‑Hardened Lab GitHub repo](https://github.com/JessiMarosi/STIG-Hardened-Lab) documents dual queues, lawful metadata routing, synthetic descriptors, and an immutable ledger — serving as the authoritative baseline for MVP scope.
+### Additional Considerations
+- Source vetting and whitelist registry.  
+- Rate limiting to prevent over‑collection.  
+- Unit tests for compliance gate decisions.  
+- Descriptor schema definition (crime type, jurisdiction, risk score, timestamp).
 
 ---
 
@@ -172,21 +189,35 @@ Metadata‑only workflows are effective in digital investigations; automated ext
 
 - **Goal:** Deliver an operational cockpit with clear separation of duties and routing.  
 - **Components:** Dashboard v1, routing engine, notification service.  
-- **Deliverables:** Role‑based access, pending agency workflow, policy enforcement.
+- **Deliverables:** Role‑based access, pending agency workflow, policy enforcement.  
+- **Dependencies:**  
+  - Web framework ([FastAPI](https://fastapi.tiangolo.com/))  
+  - Frontend framework ([React](https://react.dev/))  
+  - RBAC/IAM ([Keycloak](https://www.keycloak.org/), [Azure AD](https://azure.microsoft.com/en-us/services/active-directory/))  
+  - Email service ([SendGrid](https://sendgrid.com/), [AWS SES](https://aws.amazon.com/ses/))  
+  - Jurisdictional database ([Homeland Security Fusion Center Guidance](https://www.dhs.gov/fusion-center-guidance))
 
-### Research  
-**ConOps and dashboard best practices** from DOJ COPS Office emphasize defining goals, users, and requirements before building ([DOJ COPS ConOps Guide](https://cops.usdoj.gov/RIC/Publications/cops-p164-pub.pdf)). **Cross‑jurisdictional routing** parallels FCC location‑based call routing rules ([FCC 911 Routing Guidance](https://www.fcc.gov/911-services)) and should be adapted for metadata alerts. Real‑world platforms demonstrate **cross‑jurisdiction operations** with unified alerting and routing ([Homeland Security Fusion Center Guidance](https://www.dhs.gov/fusion-center-guidance)). State and federal alert asymmetry shows layered tip routing and escalation paths ([NIJ Crime Tip Routing Study](https://nij.ojp.gov/library/publications)).
-
----
-
+### Additional Considerations
+- Lightweight UX to avoid analyst overload.  
+- Escalation logic for agencies not onboarded.  
+- Immutable audit trails for every click/filter.  
+- Tiered access views (analyst vs supervisor vs auditor).
 ## Phase 3: Evidence integrity, affidavits, and exports
 
 - **Goal:** Court‑ready artifacts without contraband.  
 - **Components:** Affidavit generator, chain‑of‑custody export, compliance profiles.  
-- **Deliverables:** Hash verification CLI, redaction modes, audit dashboard.
+- **Deliverables:** Hash verification CLI, redaction modes, audit dashboard.  
+- **Dependencies:**  
+  - PDF generation ([ReportLab](https://www.reportlab.com/opensource/))  
+  - PKI integration ([OpenSSL](https://www.openssl.org/))  
+  - Digital signature libraries ([PyPDF2](https://pypi.org/project/PyPDF2/))  
+  - Redaction tools ([spaCy](https://spacy.io/) + regex sanitizers)
 
-### Research  
-**Evidence acquisition and analysis** innovations emphasize efficiency without compromising admissibility ([NIJ Digital Evidence Acquisition Report](https://nij.ojp.gov/library/publications/digital-evidence-acquisition)). **Deepfake and synthetic media challenges** increase scrutiny on AI‑related evidence; Rule 901 guidance requires reliability and provenance ([Federal Rules of Evidence Rule 901](https://www.law.cornell.edu/rules/fre/rule_901)). Affidavit generation must meet jurisdiction‑specific formatting and notarization standards ([NCSC Evidence Affidavit Guidance](https://www.ncsc.org/)).
+### Additional Considerations
+- Pre‑approved affidavit templates for multiple jurisdictions.  
+- Automated redaction policies for PII.  
+- Export validation with hash verification.  
+- Retention rules aligned to CJIS/GDPR.
 
 ---
 
@@ -194,10 +225,18 @@ Metadata‑only workflows are effective in digital investigations; automated ext
 
 - **Goal:** Smarter triage with explainable AI that stays privacy‑first.  
 - **Components:** Entity extraction, language detection, semantic search, explainability cards.  
-- **Deliverables:** Risk scoring rubric, model governance.
+- **Deliverables:** Risk scoring rubric, model governance.  
+- **Dependencies:**  
+  - NLP libraries ([HuggingFace Transformers](https://huggingface.co/transformers/), [spaCy](https://spacy.io/))  
+  - Vector database ([FAISS](https://github.com/facebookresearch/faiss), [Pinecone](https://www.pinecone.io/))  
+  - Model governance ([MLflow](https://mlflow.org/), [DVC](https://dvc.org/))  
+  - Explainability tools ([SHAP](https://shap.readthedocs.io/en/latest/), [LIME](https://github.com/marcotcr/lime))
 
-### Research  
-**CTI entity extraction** with NER/LLMs reduces analyst time and structures threat data ([MITRE ATT&CK CTI Guidance](https://attack.mitre.org/resources/cti/)). **Privacy‑preserving semantic search** is feasible via encrypted embeddings and secure computation ([Microsoft Research on Privacy‑Preserving Search](https://www.microsoft.com/en-us/research/publication/privacy-preserving-search/)). **Explainable AI for law enforcement** supports transparency and accountability ([NIJ Explainable AI in Policing Report](https://nij.ojp.gov/library/publications/explainable-ai-policing)).
+### Additional Considerations
+- Bias mitigation across languages/communities.  
+- Explainability cards for High alerts.  
+- Model drift monitoring and retraining.  
+- Domain adaptation for crime‑specific datasets.
 
 ---
 
@@ -205,10 +244,18 @@ Metadata‑only workflows are effective in digital investigations; automated ext
 
 - **Goal:** Field‑ready operations and team workflows.  
 - **Components:** Mobile dashboard, collaboration layer, training sandbox.  
-- **Deliverables:** Backlog prioritization, onboarding wizard.
+- **Deliverables:** Backlog prioritization, onboarding wizard.  
+- **Dependencies:**  
+  - Mobile framework ([React Native](https://reactnative.dev/), [Flutter](https://flutter.dev/))  
+  - Secure API gateway ([OAuth2](https://oauth.net/2/), [JWT](https://jwt.io/))  
+  - Collaboration backend (audit‑logged comment/tag storage)  
+  - Synthetic data generator ([Faker](https://faker.readthedocs.io/en/master/), [Synthetic Data Vault](https://sdv.dev/))
 
-### Research  
-**GIS‑powered mobile operations** enable command/control and field data access ([Esri Law Enforcement GIS Solutions](https://www.esri.com/en-us/industries/law-enforcement/overview)). **Mobile CAD integrations** show real‑time synchronization and officer safety features ([NIJ Mobile CAD Study](https://nij.ojp.gov/library/publications/mobile-computer-aided-dispatch)).
+### Additional Considerations
+- Offline mode for disconnected field agents.  
+- End‑to‑end encryption for mobile dashboards.  
+- Immutable collaboration etiquette.  
+- Synthetic datasets for onboarding/training.
 
 ---
 
@@ -217,13 +264,18 @@ Metadata‑only workflows are effective in digital investigations; automated ext
 - **Security hardening:** MFA, RBAC, signed actions, STIG‑aligned deployment.  
 - **Cost controls:** Open‑source first, cloud free tiers, queue‑based workers.  
 - **Observability:** Gate drop rates, alert throughput, routing accuracy.  
-- **Legal review cadence:** Counsel review of descriptors, exports, retention policies.
+- **Legal review cadence:** Counsel review of descriptors, exports, retention policies.  
+- **Dependencies:**  
+  - MFA provider ([Duo Security](https://duo.com/), [Authy](https://authy.com/))  
+  - Observability stack ([Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/))  
+  - Logging ([ELK Stack](https://www.elastic.co/what-is/elk-stack))  
+  - STIG hardening scripts ([Ansible](https://www.ansible.com/), [PowerShell DSC](https://learn.microsoft.com/en-us/powershell/dsc/overview))
 
-### Research  
-**OSINT ecosystems** demonstrate scalable ingestion and monitoring across open/deep/dark sources ([Bellingcat OSINT Guide](https://www.bellingcat.com/resources/how-tos/)). Veridion should integrate at the metadata boundary only, never storing contraband.
-
----
-
+### Additional Considerations
+- Incident response playbooks for breaches or gate failures.  
+- Cost governance tracking free‑tier usage.  
+- STIG alignment for every deployment.  
+- Disaster recovery backups for ledger and routing tables.
 ## Architecture overview
 
 - **Intake layer:** Workers + Compliance Gate → Synthetic Descriptors  
@@ -233,8 +285,11 @@ Metadata‑only workflows are effective in digital investigations; automated ext
 - **AI/NLP:** Entity extraction, language detection, semantic search  
 - **Governance:** Policy registry, dual‑admin approvals, audit dashboard
 
-### Research  
-[Veridion README](https://github.com/JessiMarosi/STIG-Hardened-Lab) defines dual queues, lawful routing, synthetic descriptors, immutable ledger, affidavit generator, hardened access, and pending‑agency workflows — use these as canonical architectural requirements.
+### Additional Considerations
+- Resilience: fault‑tolerant ingestion workers and queues.  
+- Scalability: horizontal scaling for alert volume growth.  
+- Interoperability: CJIS‑compliant APIs for agency integration.  
+- Disaster recovery: cryptographically verified backups.
 
 ---
 
@@ -248,3 +303,24 @@ Metadata‑only workflows are effective in digital investigations; automated ext
 6. AI/NLP v1 validated against CTI samples.  
 7. Mobile + collaboration enabled with sandbox training.
 
+### Additional Considerations
+- Each checkpoint should include audit documentation and reproducible test results.  
+- Recruiter‑facing snapshots (screenshots, diagrams) should be generated at each milestone.  
+- Legal counsel should review exports before public demos.  
+- Performance benchmarks (latency, throughput, accuracy) should be logged and published.
+
+---
+
+## Recruiter‑ and agency‑facing artifacts
+
+- Updated README with diagrams and policy snapshots.  
+- Audit snippet pack (ledger sample, affidavit example, routing matrix).  
+- Cost sheet (open‑source stack, cloud tiers, monthly run‑rate).  
+- Security posture (STIG checklist, MFA/RBAC proof).  
+- Public demo (contraband‑free walkthrough from intake → gate → descriptor → routing → affidavit)
+
+### Additional Considerations
+- README must highlight privacy‑first, contraband‑free design.  
+- Audit snippets should be recruiter‑digestible (one‑page summaries).  
+- Cost sheet should emphasize lean, scalable builds using free tiers.  
+- Demo should be short, clear, and reproducible with no sensitive data.
