@@ -311,7 +311,7 @@ Unauthorized use or distribution prohibited.
 
 ---
 
-## Recruiter‑ and agency‑facing artifacts
+## Public‑facing artifacts
 
 - Updated README with diagrams and policy snapshots.  
 - Audit snippet pack (ledger sample, affidavit example, routing matrix).  
