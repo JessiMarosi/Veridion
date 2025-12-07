@@ -234,7 +234,7 @@ Metadata‑only workflows are effective in digital investigations; automated ext
 - **Governance:** Policy registry, dual‑admin approvals, audit dashboard
 
 ### Research  
-Your [Veridion README](https://github.com/JessiMarosi/STIG-Hardened-Lab) defines dual queues, lawful routing, synthetic descriptors, immutable ledger, affidavit generator, hardened access, and pending‑agency workflows — use these as canonical architectural requirements.
+[Veridion README](https://github.com/JessiMarosi/STIG-Hardened-Lab) defines dual queues, lawful routing, synthetic descriptors, immutable ledger, affidavit generator, hardened access, and pending‑agency workflows — use these as canonical architectural requirements.
 
 ---
 
