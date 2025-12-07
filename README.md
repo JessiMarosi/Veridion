@@ -3,6 +3,10 @@
 **Privacy-First | Compliance-Ready | Court-Admissible**
 
 > “Veridion™ is a privacy-first digital watchdog for law enforcement. It monitors risky online spaces—like the dark web—looking for emerging threats such as illicit sales or cybercrime. Unlike other tools, it never stores illegal content. Instead, it generates safe, actionable summaries and sends verified alerts to the right agency. Fast, secure, auditable, and court-ready—Veridion™ is your early-warning system for digital crime.”
+>
+> > ⚠️ **Veridion™ is currently under construction.**  
+> Core modules, compliance logic, and civic engagement artifacts are being staged for release.  
+> This repo will showcase nationwide forensic monitoring and jurisdictional routing once finalized.
 
 ---
 
