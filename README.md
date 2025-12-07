@@ -104,23 +104,6 @@ It provides a defensible, scalable framework that:
 
 ---
 
-## 🧪 Phase 2 Enhancements
-
-Veridion™ is expanding with the following low-cost, high-impact features:
-
-- Semantic search (AI-powered) for alerts  
-- Real-time metadata preview with urgency flags  
-- Multi-device triage in a unified dashboard  
-- Chain-of-custody PDF export  
-- Compliance profiles (CJIS, GDPR, CCPA)  
-- Backlog prioritization engine  
-- Training sandbox for safe onboarding  
-- Mobile command dashboard for field agents  
-- Real-time collaboration (comment, tag, annotate)  
-- Agency onboarding wizard with credential verification  
-
----
-
 ## 🧭 Veridion™ vs. Competitors
 
 | Capability                  | Recorded Future         | Flashpoint              | Palantir Gotham           | AuditBoard               | **Veridion™**                                 |
@@ -247,6 +230,9 @@ Unauthorized use or distribution prohibited.
 - Escalation logic for agencies not onboarded.  
 - Immutable audit trails for every click/filter.  
 - Tiered access views (analyst vs supervisor vs auditor).
+
+--
+
 ## Phase 3: Evidence integrity, affidavits, and exports
 
 - **Goal:** Court‑ready artifacts without contraband.  
@@ -321,6 +307,9 @@ Unauthorized use or distribution prohibited.
 - Cost governance tracking free‑tier usage.  
 - STIG alignment for every deployment.  
 - Disaster recovery backups for ledger and routing tables.
+
+--
+
 ## Architecture overview
 
 - **Intake layer:** Workers + Compliance Gate → Synthetic Descriptors  
