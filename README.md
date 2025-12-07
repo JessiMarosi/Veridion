@@ -6,7 +6,7 @@
 
 ---
 
-# Executive Summary (Grant Committee Style)
+# Executive Summary
 
 **Veridion™: Privacy‑First | Compliance‑Ready | Court‑Admissible**
 
