@@ -324,3 +324,100 @@ Unauthorized use or distribution prohibited.
 - Audit snippets should be recruiter‑digestible (one‑page summaries).  
 - Cost sheet should emphasize lean, scalable builds using free tiers.  
 - Demo should be short, clear, and reproducible with no sensitive data.
+
+--
+
+# Legal Considerations for Veridion™
+
+Veridion™ is designed to operate as a **privacy‑first, compliance‑ready, court‑admissible forensic platform**. To ensure lawful operation and evidentiary defensibility, the following legal considerations are explicitly addressed:
+
+---
+
+## 1. Privacy and Data Protection
+
+- **GDPR Compliance:** Metadata‑only storage avoids contraband and PII, in line with the [General Data Protection Regulation](https://commission.europa.eu/law/law-topic/data-protection_en).  
+- **CCPA Compliance:** California residents’ rights to opt‑out, access, and deletion are respected under the [California Consumer Privacy Act](https://oag.ca.gov/privacy/ccpa).  
+- **FOIA/Redaction Standards:** Synthetic descriptors and redaction policies align with [FOIA guidelines](https://www.foia.gov/) to ensure lawful public disclosure without exposing sensitive content.
+
+---
+
+## 2. Criminal Justice Information Services (CJIS)
+
+- **CJIS Security Policy:** All access, storage, and transmission of criminal justice information follow the [FBI CJIS Security Policy](https://www.fbi.gov/services/cjis/cjis-security-policy).  
+- **Encryption Requirements:** Data is encrypted at rest and in transit, with MFA and RBAC enforced.  
+- **Audit Logging:** Immutable logs meet CJIS audit standards for traceability and accountability.
+
+---
+
+## 3. Federal Information Security Standards
+
+- **NIST 800‑53 Controls:** Implements access control, audit, incident response, and system integrity safeguards per [NIST SP 800‑53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final).  
+- **NIST 800‑171 Requirements:** Metadata handling and descriptor storage comply with [NIST SP 800‑171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final) for controlled unclassified information (CUI).  
+- **FISMA Awareness:** Federal Information Security Modernization Act obligations are integrated into governance workflows ([FISMA Overview](https://www.cisa.gov/topics/cybersecurity-best-practices/federal-information-security-modernization-act)).
+
+---
+
+## 4. Evidence Admissibility
+
+- **Federal Rules of Evidence (Rule 901):** Authentication of evidence through cryptographic signatures and immutable chain‑of‑custody ([Rule 901](https://www.law.cornell.edu/rules/fre/rule_901)).  
+- **Digital Signature Standards:** Compliance with [NIST Digital Signature Standard (FIPS 186)](https://csrc.nist.gov/publications/detail/fips/186/5/final).  
+- **Affidavit Generation:** Exported case bundles include notarization‑ready affidavits, aligned with [National Center for State Courts guidance](https://www.ncsc.org/).  
+- **Synthetic Descriptors:** Replace raw contraband with lawful forensic summaries, ensuring admissibility without privacy violations.
+
+---
+
+## 5. Jurisdictional Routing
+
+- **Fusion Center Guidance:** Alerts routed according to jurisdictional authority, following [DHS Fusion Center Guidance](https://www.dhs.gov/fusion-center-guidance).  
+- **FCC Location‑Based Routing:** Metadata routing parallels [FCC 911 routing standards](https://www.fcc.gov/911-services).  
+- **Custody Transfer Across Jurisdictions:** Evidence handling follows [NIJ Digital Evidence Guidance](https://nij.ojp.gov/library/publications/digital-evidence-guidance).  
+- **Escalation Logic:** Pending agency workflows escalate alerts to federal oversight until onboarding is complete.
+
+---
+
+## 6. Records Retention and Destruction
+
+- **Retention Schedules:** Metadata and logs follow [NARA Federal Records Guidance](https://www.archives.gov/records-mgmt).  
+- **Secure Destruction:** Expired records are cryptographically wiped to prevent recovery.  
+- **Jurisdictional Variance:** Retention policies adapt to state/federal requirements.
+
+---
+
+## 7. Export Controls and International Law
+
+- **Export Administration Regulations (EAR):** Compliance with [U.S. Department of Commerce EAR](https://www.bis.doc.gov/index.php/regulations/commerce-control-list-ccl).  
+- **International Traffic in Arms Regulations (ITAR):** Adherence to [ITAR](https://www.pmddtc.state.gov/ddtc_public?id=ddtc_public_portal_itar_landing) for sensitive technologies.  
+- **EU‑US Data Privacy Framework:** Metadata routing avoids contraband, ensuring compliance with [Data Privacy Framework](https://www.dataprivacyframework.gov/).  
+- **INTERPOL Guidance:** Alignment with [INTERPOL Cybercrime Guidance](https://www.interpol.int/en/Crimes/Cybercrime).
+
+---
+
+## 8. Liability and Safe Harbor
+
+- **CISA Safe Harbor:** Information sharing protections under the [Cybersecurity Information Sharing Act](https://www.cisa.gov/resources-tools/resources/cybersecurity-information-sharing-act-cisa-safe-harbor).  
+- **Disclaimer:** Veridion™ provides lawful metadata alerts but agencies remain responsible for investigative outcomes.  
+- **Risk Mitigation:** Escalation logic reduces liability by ensuring alerts reach appropriate authorities.
+
+---
+
+## 9. Accessibility and Civil Rights
+
+- **Section 508 Compliance:** Dashboards meet [Section 508 accessibility standards](https://www.section508.gov/).  
+- **Civil Rights Protections:** AI outputs are monitored for bias to avoid discriminatory enforcement.  
+- **Transparency:** Explainability cards provide rationale for AI decisions.
+
+---
+
+## 10. Intellectual Property and Licensing
+
+- **Open‑Source Compliance:** Dependencies used under their respective licenses ([Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0), [MIT License](https://opensource.org/licenses/MIT)).  
+- **Trademark Protection:** Veridion™ trademark is pending; unauthorized use prohibited.  
+- **Copyright:** Documentation and synthetic descriptors © 2025 Jessica Marosi, ByteLock Technologies Incorporated.
+
+---
+
+## 11. Supply Chain Security
+
+- **NIST SP 800‑161:** Compliance with [NIST Cybersecurity Supply Chain Risk Management](https://csrc.nist.gov/publications/detail/sp/800-161/rev-1/final).  
+- **Dependency Audits:** Regular scans for vulnerabilities in open‑source libraries.  
+- **Vendor Verification:** Cloud and service providers vetted for CJIS/FISMA compliance.
